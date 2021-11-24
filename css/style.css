@@ -1,0 +1,387 @@
+:root {
+  --main-color: rgb(16, 147, 199);
+  --black: #244361;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none !important;
+  text-transform: capitalize;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html {
+  scroll-padding-top: 60px;
+}
+section {
+  padding: 20px 0;
+}
+
+section:nth-child(odd) {
+  background: #f8f8fe;
+}
+.heading {
+  text-align: center;
+  padding: 0 15px;
+  padding-bottom: 5px;
+  color: var(--black);
+  font-size: 30px;
+}
+
+.heading span {
+  color: var(--main-color);
+}
+.link-btn {
+  display: inline-block;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 50px;
+  padding: 5px 25px;
+  font-size: 17px;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+
+.link-btn:hover {
+  color: #fff;
+  background: var(--black);
+}
+
+header {
+  box-shadow: var(--box-shadow);
+  background: #fff;
+}
+
+header .logo {
+  font-size: 20px;
+  color: var(--black);
+}
+
+header .logo span {
+  color: var(--main-color);
+}
+
+header .nav a {
+  margin-left: 3px;
+  border-radius: 50px;
+  color: var(--black);
+  padding: 5px 15px;
+}
+
+header .nav a.active,
+header .nav a:hover {
+  background: var(--main-color);
+  box-shadow: var(--box-shadow);
+  color: #fff;
+}
+
+#menu-bar {
+  color: var(--black);
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.2s linear;
+}
+.home {
+  min-height: 100vh;
+  background: url(../images/home-bg.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: rgb(132, 215, 248);
+}
+
+.home .content span {
+  color: var(--main-color);
+  font-size: 20px;
+}
+
+.home .content h3 {
+  color: var(--black);
+  font-size: 50px;
+  font-weight: bolder;
+}
+.about {
+  background-color: #00bacf;
+}
+.about .content h3 {
+  color: var(--black);
+  font-size: 33px;
+}
+
+.about .content p {
+  color: #777;
+  font-size: 14px;
+}
+.prevent .box {
+  flex: 1 1 300px;
+  background: #f8f8fe;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.prevent .box img {
+  margin-bottom: 10px;
+  height: 70px;
+}
+
+.prevent .box h3 {
+  color: var(--black);
+  font-size: 20px;
+}
+
+.prevent .box p {
+  color: var(--black);
+  font-size: 14px;
+}
+.symptom {
+  padding: 30px;
+  background: rgb(161, 223, 248);
+}
+.symptom .img {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 80px;
+  flex: 0 0 80px;
+  margin-right: 20px;
+}
+.symptom .img img {
+  max-width: 100%;
+  margin-bottom: 0;
+}
+.symptom .text {
+  padding-top: 10px;
+}
+.symptom .text h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #9977da;
+}
+.symptom .text p {
+  line-height: 1.5;
+  font-size: 15px;
+  margin-bottom: 0;
+}
+#prokes {
+  font-family: calibri;
+  background-color: rgb(132, 215, 248);
+  padding-top: 2rem;
+}
+.desc-jdl2 {
+  color: #244361;
+  margin-top: -20px;
+  text-shadow: 0px 0px 2px #244361;
+  font-size: 30px !important;
+}
+.jdl-5m {
+  margin-top: -30px;
+}
+.card-prokes {
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  #prokes {
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .card-prokes {
+    margin-right: 10px !important;
+  }
+  #prokes {
+    padding-top: 3rem;
+  }
+  .card-2 {
+    margin-left: -10px !important;
+  }
+}
+
+@media (max-width: 375px) {
+  #prokes {
+    padding-top: 4rem;
+  }
+}
+
+.jdl-card {
+  line-height: 30px;
+  font-size: 25px;
+}
+
+#masker,
+#cuci,
+#jarak,
+#kerumunan,
+#mobilitas {
+  background-color: rgb(66, 161, 199);
+}
+.card-masker {
+  /*background-color: #007c85;*/
+  border-radius: 30px;
+  overflow: hidden;
+}
+.card-masker img {
+  width: 120%;
+  margin-left: -20px;
+}
+
+.experts .box {
+  width: 260px;
+  background: rgb(161, 223, 248);
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  margin: 5px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.experts .box img {
+  background: #f8f8fe;
+  border-radius: 100px;
+  width: 50%;
+  margin-bottom: 8px;
+}
+
+.experts .box h3 {
+  font-size: 22px;
+  margin: 2px 0;
+  color: var(--black);
+}
+.experts .box p {
+  font-size: 15px;
+  margin: 2px 0;
+  color: #244361;
+  text-align: center;
+}
+
+.experts .box span {
+  font-size: 10px;
+  color: var(--main-color);
+}
+
+.experts .box .share {
+  position: absolute;
+  top: 5px;
+  right: -50px;
+  transition: 0.2s;
+}
+
+.experts .box:hover .share {
+  right: 15px;
+}
+
+.experts .box .share a {
+  border-radius: 5px;
+  background: var(--main-color);
+  color: #fff;
+  display: block;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+}
+
+.experts .box .share a:hover {
+  background: var(--black);
+}
+#footer {
+  background-color: rgb(161, 223, 248);
+  padding-top: 35px;
+}
+.footer .box {
+  flex: 1 1 250px;
+  margin: 15px;
+}
+
+.footer .box h3 {
+  font-size: 20px;
+  color: var(--black);
+}
+.footer .box span {
+  font-size: 15px;
+  color: var(--black);
+}
+.footer .box a {
+  display: block;
+  font-size: 14px;
+  color: #777;
+  padding: 5px 0;
+}
+
+.footer .box a:hover {
+  color: var(--main-color);
+}
+
+.footer .credit {
+  text-align: center;
+  color: var(--black);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  padding-top: 20px;
+}
+
+.footer .credit span {
+  color: var(--main-color);
+}
+.footer .logo img {
+  height: 90%;
+  width: 90%;
+  padding-right: 50px;
+}
+.footer .logo1 img {
+  height: 80%;
+  width: 80%;
+  margin-left: 50px;
+  vertical-align: middle;
+}
+
+/* media queries */
+@media (max-width: 991px) {
+  .home .content h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  header .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.2s linear;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .nav.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  header .nav a {
+    display: block;
+    width: 100%;
+    margin: 10px;
+  }
+  .fa-times {
+    transform: rotate(180deg);
+  }
+}
+
+@media (max-width: 320px) {
+  .footer .logo img {
+    height: 60%;
+    width: 60%;
+    padding-right: 50px;
+  }
+  .footer .logo1 img {
+    height: 60%;
+    width: 60%;
+    margin-left: 50px;
+    vertical-align: middle;
+  }
+}
