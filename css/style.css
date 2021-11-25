@@ -330,8 +330,8 @@ header .nav a:hover {
   color: var(--main-color);
 }
 .footer .logo img {
-  height: 90%;
-  width: 90%;
+  height: 70%;
+  width: 70%;
   padding-right: 50px;
 }
 .footer .logo1 img {
